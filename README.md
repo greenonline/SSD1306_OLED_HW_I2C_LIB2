@@ -14,8 +14,8 @@ There are a number of derived classes, from this base class, which add compatabi
  
  In addition, there are "wrapper" classes, to some of the above derived classes, which provide standard Arduino begin(), clear() and other functions. These should be used in Arduino projects as they aim to provide plug in capabilities, as a display driver for the SSD1306, for existing Arduino projects:
  
-  - [Small_SSD1306_Print_8x16_Dash_lib](https://github.com/greenonline/Small_SSD1306_Print_8x16_Dash_lib)
   - [Small_SSD1306_Print_8x16_lib](https://github.com/greenonline/Small_SSD1306_Print_8x16_lib)
+  - [Small_SSD1306_Print_8x16_Dash_lib](https://github.com/greenonline/Small_SSD1306_Print_8x16_Dash_lib)
 
 **SSD1306_OLED_HW_I2C and derived classes**
 
@@ -31,6 +31,13 @@ Here is a list of classes which are derived from the original [SSD1306_OLED_HW_I
     * [SSD1306_OLED_HW_I2C_PRINT_8X16_DASH_LIB](https://github.com/greenonline/SSD1306_OLED_HW_I2C_PRINT_8X16_DASH_LIB)   
                                          - Arduino library object class derived from SSD1306_OLED_HW_I2C_PRINT_8X16_LIB 
                                          - Adds D_DRAW_VERT_DASHED. 
+
+**Wrapper classes derived from SSD1306_OLED_HW_I2C_LIB2 and its derivatived classes**
+    
+      Small_SSD1306_Print_lib            -  (not created - "missing link") Class derived from SSD1306_OLED_HW_I2C_PRINT_LIB class, contains begin(), clear(), setCursor(), setCursorMode()
+    * [Small_SSD1306_Print_8x16_lib](https://github.com/greenonline/Small_SSD1306_Print_8x16_lib)       - Class derived from SSD1306_OLED_HW_I2C_PRINT_8X16_LIB class, contains begin(), clear(), setCursor(), setCursorMode(), setPrint8x16CharacterMode() functions
+    * [Small_SSD1306_Print_8x16_Dash_lib](https://github.com/greenonline/Small_SSD1306_Print_8x16_Dash_lib)  - Class derived from SSD1306_OLED_HW_I2C_PRINT_8X16_DASH_LIB class, contains begin(), clear(), setCursor(), setCursorMode(), setPrint8x16CharacterMode() functions
+
 **Development and Test Classes**
 
       SSD1306_OLED_HW_I2C_LIB_PRINT
@@ -41,17 +48,11 @@ Here is a list of classes which are derived from the original [SSD1306_OLED_HW_I
       SSD1306_OLED_HW_I2C_LIB_MGJ        - Test modifications of SSD1306_OLED_HW_I2C for 128x32, no class
       SSD1306_OLED_HW_I2C_LIB_FULL       - Arduino library object class version of SSD1306_OLED_HW_I2C_LIB, contains begin(), clear(), setCursor(), setCursorMode()
 
-**Wrapper classes**
+**Development and Test Wrapper classes**
     
       Small_SSD1306                      - Class derived from SSD1306_OLED_HW_I2C_LIB, contains begin(), clear(), setCursor(), setCursorMode()
       Small_SSD1306_Print                - Class derived from SSD1306_OLED_HW_I2C_LIB_PRINT class, contains begin(), clear(), setCursor(), setCursorMode()
       Small_SSD1306_Print_8x16           - Class derived from SSD1306_OLED_HW_I2C_LIB_PRINT_8X16 class, contains begin(), clear(), setCursor(), setCursorMode(), setPrint8x16CharacterMode() functions
-
-**Wrapper classes derived from SSD1306_OLED_HW_I2C_LIB2 and its derivatives**
-    
-      Small_SSD1306_Print_lib            -  (not created - "missing link") Class derived from SSD1306_OLED_HW_I2C_PRINT_LIB class, contains begin(), clear(), setCursor(), setCursorMode()
-    * [Small_SSD1306_Print_8x16_lib](https://github.com/greenonline/Small_SSD1306_Print_8x16_lib)       - Class derived from SSD1306_OLED_HW_I2C_PRINT_8X16_LIB class, contains begin(), clear(), setCursor(), setCursorMode(), setPrint8x16CharacterMode() functions
-    * [Small_SSD1306_Print_8x16_Dash_lib](https://github.com/greenonline/Small_SSD1306_Print_8x16_Dash_lib)  - Class derived from SSD1306_OLED_HW_I2C_PRINT_8X16_DASH_LIB class, contains begin(), clear(), setCursor(), setCursorMode(), setPrint8x16CharacterMode() functions
 
 *16 class libraries*
 
