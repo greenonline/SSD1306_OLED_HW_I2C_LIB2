@@ -20,9 +20,9 @@ There are a number of derived classes, from this base class, which add compatabi
  
  In addition, there are "wrapper" classes, to some of the above derived classes, which provide standard Arduino `begin()`, `clear()` as well as other functions, such as:
  
-  - Character based cursor placement (`setCursor()` and `setCursorMode()`;
-  - Larger character selection (`setPrint8x16CharacterMode()`), and;
-  - <strike>Dashed vertical line drawing (`D_DRAW_VERT_DASHED()`)</strike>. 
+  - Character based cursor placement, `setCursor()` and `setCursorMode()`;
+  - Larger character selection, `setPrint8x16CharacterMode()`, and;
+  - <strike>Dashed vertical line drawing, `D_DRAW_VERT_DASHED()`</strike>. 
  
  These should be used in Arduino projects as they aim to provide plug in capabilities, as a display driver for the SSD1306, for existing Arduino projects:
  
